@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品质365 2015年度第二届大麦节——大麦PARTY ON完美收官</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>品质365 2015年度第二届大麦节——大麦PARTY ON完美收官</h3>
+            <time>2015-10-12</time>
+			<p>经过8月、9月两个月的筹备，易麦通品质365网上商城 2015年度第二届大麦节于2015年10月12日隆重上线，历经一个月的购物风潮席卷，给会员带来了新一轮的疯狂体验，11月8日正式收官。</p>
+            <p>品质365为给会员带来更多惊喜和实惠，自2014年推出第一届年度大麦节和庙会大型促销活动，经过几重麦浪的澎湃，创造了销售佳绩，单天营业额峰值达到品质365历史最高，也与会员共同收获了满满的喜悦。延续2014年未完待续的故事，2015年第二届大麦节蓄势而来，大麦PARTY ON，再次刷新你的购物体验！</p>
+            <p>本届大麦节的亮点，是多元化。易麦通经过一年的发展和努力开拓，现除了基础平台品质365网上商城作为主力商品和海量商品的基础，2015年8月1日正式上线的“足不出户购全球”海外购物平台品质全球也加入了这次购物狂欢盛宴。不仅是品质365、品质全球两个线上平台，今年10月13日正式开业的重庆HILIFEO2O旗舰店、O2O社区店也是此次大麦节的重要嘉宾，将线上线下活动进行了更好的有机结合，重庆市第一家O2O体验旗舰店已正式投入营业，还将陆续在其他重要城市不断推出新的线下体验店。</p>
+            <p>本届大麦节领军还是馨启典100%有机茶籽油、野生沙棘果酱、冰川植物胚胎素冰贵人等主力商品，今年由原来的六条产品线壮大到十二条产品线的海量产品，依然延续了去年的优惠让利形式，满199减100、第二件半价、五折起狂扫、精品秒杀等活动形式应接不暇，更实现了优惠券等新的功能。易麦通一直在前进的脚步中不断完善着后台系统的稳定性和新功能，为此次大麦节带来了更稳定和新鲜的购物体验。</p>
+            <p>刚刚进入视野的品质全球趁势以主打独家代理阿尔卑斯山盐系列食用盐洗护用品和套餐、奢侈品限量直降、奢侈品优惠代金券以及9.9元19.9元也能买到日韩进口货为主题，在大麦节期间，以每周主题轮换的形式带动了海外购的风潮。</p>
+            <p>10月13日落成的O2O旗舰店刚好迎接此次大麦节活动月，宣传申请旗舰店会员卡享优惠，并推出“免费领取一小时旗舰店会员资格”活动。随时在品质365网站领取，可享受一小时以旗舰店会员价购买指定旗舰店内商品的资格的体验式服务。</p>
+            <p>大麦节于11月8日完美收官，不但刷新了2014年大麦节创造的最高销售额和日销量历史最高，总结着昨天和今天的经验，也为我们第三届大麦节奠定着基础筹备着愿景和力量。罗麦家人是我们不断前进和完善的最大动力，愿我们在来年的大麦节再相见，再度携手创造辉煌。</p>
+			<p class="fr">2015.11.12</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

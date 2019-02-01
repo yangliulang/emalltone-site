@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>招商工作全面展开 全面覆盖重庆地区</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>招商工作全面展开 全面覆盖重庆地区</h3>
+            <time>2016-01-01</time>
+			<p>北京易麦通电子商务有限公司始终坚持用高品质要求和严格态度为消费者采购全球优质商品。重庆易麦通鲁能一店、龙城二店两个直营店已于2015年10月正式营业，为方便用户更便捷购物，重庆易麦通与华龙百家合作，开发社区O2O平台——品质生活超市，HILIFE社区店微商城在同一时间上线运营。</p>
+            <p>继两家社区店开业，现招商工作已全面展开。2015年11月1日，供货网首批商家签订合同，共计13家，成为社区店供货网的首批生力军。易麦通走访了计划覆盖区域的店铺，审核店铺开业资格，收集意见与建议，并向待合作的店铺讲解合作模式，确定合作意向。截止12月末，渝北区共计177家店铺全部走访完毕，通过了其中78家的审核并确认合作意向。</p>
+            <p>2016年1月7日重庆报业店正式开业。报业店是华龙百家与重庆易麦通合作，并由重庆易麦通运营的社区店，该店可刷内部职工卡，实现了平台与企业的对接合作，销售量稳定。1月8日，三亚湾中百仓储，供货网首批商品共78款入仓。1月15日起，供货网试运营，门店订货营业试流转，测试无问题，1月18日，供货网正式启动对外开放。</p>
+            <p>截止到1月末，已经完成预计工作目标，共计签订37家店铺，其中确定进货与平台合作店铺17家，1月份加盟店客户端商品流通量稳定。</p>
+            <p>2月2日，奥园店也正式开业。奥园店是电管中心自行筹建的第一家社区店，该店主要覆盖了奥园四期2000多家住户。</p>
+            <p>2016年的重庆易麦通的O2O社区店发展蓝图里，线上线下服务结合全面覆盖重庆地区的目标已经在稳扎稳打的步法之中越来越近了。目前O2O供货网及店铺经营的品类有日用品、家用电器、家居、个护化妆、箱包、运动户外、母婴玩具、食品、酒类、营养保健等众多品类，让广大消费者体验线上线下融合的便捷消费。罗麦科技集团的电子商务发展战略，最终要实现的目标是让所有消费者全方位享有品质生活，向着这个目标努力，我们必将迈向更新更高的阶段。</p>
+			<p class="fr">2016年02月10日</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

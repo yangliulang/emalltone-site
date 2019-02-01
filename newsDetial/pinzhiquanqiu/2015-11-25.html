@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品质全球携手农行e动乐享   定制购物新体验</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>品质全球携手农行e动乐享   定制购物新体验</h3>
+            <time>2015-11-25</time>
+			<p>2015年11月25日品质全球携手农行正式推出e动乐享移动端购物平台正式上线，此平台是由品质全球负责手机端技术开发和运营，针对农行内部员工开放的购物平台。</p>
+            <p>为促进银行内部员工的消费需求，扩大内需，品质全球e动乐享手机客户端每月活动策划尽量根据群体特典提供商品。包括每周选品 “爆款商品”作为特价商品促销；每个月保持至少一到两场固定活动，如情人节奢侈品专场、妇女节洗护用品专场、315活动等，基本与品质全球网站活动保持同步，稳定持续地带动销量。</p>
+            <p>2016年3月15日起，“限量秒杀”活动版块在e动乐享正式上线，持续刺激消费的同时，也丰富了的活动形式和产品品类。</p>
+            <p>e动乐享主要是针对农行的内部员工建立起来的内网购物平台。目前品质全球正在针对全部持有农行账户以及储蓄卡信用卡的用户开发外网购物平台，旨在为更广泛的用户群体提供更高质量的商品和服务。虽然还未开始运营，但是我们可以期待品质全球以及品质365在未来，与农行的合作范围更深更广，甚至与更多企业和平台的合作已指日可待。</p>
+			<p class="fr">2016年03月15日</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

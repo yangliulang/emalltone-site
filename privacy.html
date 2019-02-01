@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.pinzhi365.com/pinzhiV2.0/images/static/favicon.ico" type="image/x-icon">
+<title>隐私条款</title>
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="styles/base.css">
+<link rel="stylesheet" type="text/css" href="styles/news-detial.css">
+<style>
+.news-content h3{text-align:center;padding-bottom:20px;}
+</style>
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>隐私条款</h3>
+			<p>非常感谢您相信我们对隐私处理的谨慎和认真，我们将会采取各种安全技术和程序对您的个人信息进行保密，本条款将表达我们对您隐私权的保护关注和行动。</p>
+            <p>我们从您得到的信息将有助于我们使您在本网站的购物和服务活动个性化而且有助于我们的服务水平不断得到提升。我们采集的信息包括：</p>
+            <p>您注册时提供的信息，包括您的姓名、性别、出生年月日、身份证号码、电话号码、电子邮箱、地址、支付账号等信息。对于此类个人隐私信息，我们将予以严格保密，除非：</p>   
+            <p>1.得到您的授权；</p>
+			<p>2.系为履行您的订单或保护您的合法权利所必须；</p>
+			<p>3.系为您更好地提供服务而向您发送的促销活动、产品和服务信息；</p>
+			<p>4.根据法律要求我们必须提供给第三方的。</p>
+            <p>在您使用服务过程中收集的信息，包括但不限于您的IP地址、浏览器类型、使用语言、访问日期和时间以及您需求的网页记录、浏览搜索等数据。对于此类个人信息，我们将予以严格保密，除非：</p>
+            <p>1.向您提供您使用的各项服务，并维护、改进这些服务；</p>
+			<p>2.针对您的可能需求和兴趣，向您提供更加个性化的服务；</p>
+			<p>3.向可信赖的合作方提供您的信息，让他们根据我们的指示并采取相应的保密措施来为我们处理这些信息。</p>
+            <p>如您不同意本隐私权政策，请您立即停止使用本平台服务，当您使用我们平台提供的任一服务时，即表示您同意我们按照本隐私权政策来合法使用和保护您的个人信息。</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="scripts/libs/jquery-1.9.0.js"></script>
+<script src="scripts/libs/react-width-addons.js"></script>
+<script src="scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="scripts/components/header-component.js"></script>
+<script type="text/jsx" src="scripts/components/footer-component.js"></script>
+<script src="http://s95.cnzz.com/z_stat.php?id=1260343490&web_id=1260343490" language="JavaScript"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

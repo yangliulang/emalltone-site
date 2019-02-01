@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hilife社区店正式开业 开启O2O便捷服务时代</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>hilife社区店正式开业 开启O2O便捷服务时代</h3>
+            <time>2015-10-12</time>
+			<p>2015年10月13日，是重庆首家HILIFE品质生活体验中心及两家品质生活社区店正式开业的日子。位于重庆高新园宝华大道的“HI LIFE”品质生活体验中心于10月13日正式营业，与此同时，与“HI LIFE”品质生活体验中心同期试运行的还有两家落地社区店，分别是位于鲁能新城的重庆易麦通一店、位于龙城国际三期重庆易麦通通二店。</p>
+            <p>跨境电商实体店的魅力，就是开启O2O线上线下便捷品质生活的良好开端，我们希望通过落地社区店的试运营，能够了解当地消费者需求、喜好和购物习惯，以进一步调整产品体系和服务流程。接下来，紧锣密鼓的后续工作将全面展开，不仅要完善社区店背后的供货网系统，还要全面展开B2B、B2C的招商工作，确认合作意向，预计明年1月完成至少30家供货网商家签约。</p>
+            <p>易麦通将在未来为广大的经销商及消费者提供更多高品质产品及更完善的服务，带领更多人向新的生活方式迈进，为后续更好的服务重庆而打下坚实的基础。下一步 HI LIFE平台将会持续发力，实现重庆重点社区的全覆盖。我们将以O2O战略新主张“HI LIFE”，这一句简单的表达，来传达不简单的服务理念，倡导为客户提供智慧、高效、自由的生活新概念，开启美好的生活。</p>
+			<p class="fr">2015年10月13日</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content: ;}
+abbr,acronym{border:0;}
+body{font: 12px/1.5 "microsoft yahei",tahoma,arial,'Hiragino Sans GB';}
+a:link{color:#666; text-decoration:none;}
+a:visited{color:#666;}
+a:active{color:#666;}
+a:hover{color:#f00b0e;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1;}
+.text-ellipsis{white-space:nowrap;/*设置不折行*/text-overflow:ellipsis;/*这就是省略号喽*/-o-text-overflow:ellipsis;/*兼容opera*/overflow: hidden;/*设置超过的隐藏*/}
+/*公用*/
+.block-1210{width:1210px;margin:0 auto;}
+/**公用头**/
+#header{height:85px; position:relative;z-index:100;}
+.logo{width:215px;height:85px;float:left;}
+.logo a{display:block;width:215px;height:85px; background:url(../images/logo.jpg) no-repeat center center;text-indent:-9999px;}
+.nav{float:right;}
+.nav .nav-item{float:left;height:85px; position:relative;}
+.nav .nav-item .menu{display:block;height:77px;width:90px;text-align:center;margin:0 10px;font-size:16px;color:#333; line-height:85px;border-bottom:8px solid #fff;}
+.nav .nav-item:hover .menu{border-bottom-color:#2e4d62;}
+.sub-menu{display:none;position:absolute;left:10px;width:90px; background-color:rgba(68,93,115,0.8);}
+.sub-menu a{display:block;height:40px; line-height:40px;font-size:16px;text-align:center;color:#fff;}
+.sub-menu a:hover{color:#859bb0;}
+.nav .nav-item:hover .sub-menu{display:block;}
+/**公用头end**/
+
+
+/**公用页脚**/
+#footer{height:155px;font-size:15px;}
+.links{width:680px;margin:0 auto;padding-top:45px;}
+.links dt,.links dd{float:left;padding:0 12px;}
+.links dt{color:#666;}
+.links dd a:hover{color:#2e4c64;}
+.copy{text-align:center;color:#666;margin-top:15px;}
+.copy a{padding:0 5px;}
+/**公用页脚end**/

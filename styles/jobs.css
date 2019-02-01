@@ -1,0 +1,50 @@
+.search-area{height:520px; background:#eee url(../images/jobs_bg.jpg) no-repeat center center;}
+.search-bar{position:relative;top:240px;height:40px;width:365px;margin:0 auto;border-radius:20px;overflow:hidden;}
+.search-bar input{width:345px;height:18px;line-height:18px;padding:11px 5px;border:0;padding-left:15px;}
+.search-bar .search-icon{position:absolute;right:0;top:0;bottom:0;width:40px; background-color:red;}
+
+.jobs-page{padding-top:45px; background-color:#62b1c2;}
+.jons-area{background-color:#f1f1f1;}
+.jobs-page .aside{width:300px;float:left; padding:25px;}
+.jobs-page .jobs-main{float:left;width:800px;padding-left:60px; background-color:#62b1c2;}
+.aside h2{font-size:20px;color:#298496}
+.job-list{margin-top:30px;}
+.job-list li{float:left;margin-right:10px;margin-bottom:10px;}
+.job-list li a{display:block;padding:5px 10px;font-size:16px;border:1px solid #adadad;color:#8b8b8b;}
+.job-list li a:hover{color:#2c8396; background-color:#aad9e3;border-color:#aad9e3;}
+
+.group-list{background-color:#2e94ab;padding:20px 40px;}
+.work-group{ position:relative;overflow:hidden;}
+.work-group:before{content:"";position:absolute;left:-25px;top:-25px;width:50px;height:50px;background-color:#62b1c2;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+.work-group:after{content:"";position:absolute;right:-25px;bottom:-25px;width:50px;height:50px;background-color:#62b1c2;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+.group-list li{float:left;margin-right:40px;padding-bottom:10px;}
+.group-list li a{display:block;font-size:16px;color:#98dbec;}
+
+.group-items{padding-top:75px;color:#fff;padding-bottom:50px;}
+.group-items dl{border-bottom:2px dotted #2c8195;padding-bottom:40px;margin-bottom:40px;}
+.group-items dt{margin-bottom:30px;}
+.group-items dd:last-child{margin-top:40px;}
+.group-items dt span{padding:5px 10px;background-color:#ffda93;font-size:20px;color:#2c8498;}
+.group-items .job-info{width:380px;float:left;}
+.group-items .job-desc{width:370px;padding-left:50px;float:left;}
+.job-info p,.job-info h3{font-size:16px;}
+.job-info ul{margin-top:10px;}
+.job-info ul li{line-height:200%;font-size:14px;}
+
+.job-desc h4{font-size:16px;}
+.job-desc ul{margin-top:10px;}
+.job-desc ul li{line-height:200%;font-size:14px;}
+
+.group-items  a.emaill{float:right;width:105px;height:35px;line-height:35px;border:2px solid #186b7b;color:#186b7b;border-radius:18px;font-size:20px;text-align:center;}

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>厦门工会职工e家 线上平台稳步运营</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>厦门工会职工e家 线上平台稳步运营</h3>
+            <time>2015-12-05</time>
+			<p>厦门市总工会成立于1927年1月， 八十年代以来，厦门工会的基本职责经历了从“生产、生活、教育”三位一体到“参与、维护、建设、教育”四项职能再到全面履行各项社会职能、突出维护基本职责三个阶段，在构建和谐劳动关系，维护职工合法权益，充分发挥工会组织在特区改革、发展、稳定中的发挥了独特的积极作用。</p>
+            <p>厦门工会是厦门为所有在职和退休员工提供社会性和公益性服务的稳固坚实后台，有着完善的办公系统和运营模式。品质全球与厦门工会正式达成合作协议时间是2015年12月25日。职工e家——品质全球针对厦门工会会员设立开放的购物平台。每月由品质全球负责提供该平台产品上线版块的商品，针对厦门工会会员开展各类促销活动，以及及时调整商品价格等。</p>
+            <p>继与农行e动乐享合作之后，与厦门工会职工e家的合作再一次鉴证了品质全球海外购物平台的实力和一步步稳扎稳打的发展过程。品质全球未来的发展值得更多的期待，也期待与更多的组织和企业合作，迈向更远更宽广的平台。</p>
+			<p class="fr">2015年12月28日</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

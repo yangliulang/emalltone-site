@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.pinzhi365.com/pinzhiV2.0/images/static/favicon.ico" type="image/x-icon">
+<title>经营范围-北京易麦通电子商务有限公司</title>
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="styles/base.css">
+<style>
+#page{background-color:#f5f5f5;border-bottom: 1px solid #c8c8c8;}
+.serve{margin:0 auto;}
+.serve img{display:block;}
+</style>
+</head>
+<body>
+
+<!--统一引入-->
+<script src="scripts/libs/jquery-1.9.0.js"></script>
+<script src="scripts/libs/react-width-addons.js"></script>
+<script src="scripts/libs/reflux.min.js"></script>
+<script src="scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="scripts/components/header-component.js"></script>
+<script type="text/jsx" src="scripts/components/footer-component.js"></script>
+<script type="text/jsx" src="scripts/components/serve-component.js"></script>
+<script src="http://s95.cnzz.com/z_stat.php?id=1260343490&web_id=1260343490" language="JavaScript"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+var IndexMain = React.createClass({
+	render:function(){
+		return (
+				<div id="EmallToneWebApp">
+					<div id="header">
+						<Header/>
+					</div>
+					<div id="page">
+						<Serve/> 
+					</div>
+					<div id="footer">
+						<Footer/>
+					</div>
+				</div>
+		);
+	}
+});
+React.render(<IndexMain/>,document.body);
+ </script>
+</body>
+</html>

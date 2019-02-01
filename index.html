@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="">
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.pinzhi365.com/pinzhiV2.0/images/static/favicon.ico" type="image/x-icon">
+<title>北京易麦通电子商务有限公司</title>
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="styles/base.css">
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+<link rel="stylesheet" type="text/css" href="styles/video-js.min.css">
+</head>
+<body>
+
+<!--统一引入-->
+<script src="scripts/libs/jquery-1.9.0.js"></script>
+<script src="scripts/libs/react-width-addons.js"></script>
+<script src="scripts/libs/reflux.min.js"></script>
+<script src="scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="scripts/components/header-component.js"></script>
+<script type="text/jsx" src="scripts/components/footer-component.js"></script>
+<script type="text/jsx" src="scripts/components/index-component.js"></script>
+<script src="http://s95.cnzz.com/z_stat.php?id=1260343490&web_id=1260343490" language="JavaScript"></script>
+<!--统一引入 end-->
+<script src="scripts/libs/video.min.js"></script>
+<script type="text/jsx">
+var IndexMain = React.createClass({
+	getInitialState:function(){
+		return {
+			scrollTop:0,
+			winHeight:$(window).height(),
+			pageIndex:-3,
+			isScroll:true
+		};
+	},
+	componentDidMount:function(){
+		$(window).resize(function(){
+			this.setState({winHeight:$(window).height()});
+			this.setState({isScroll:true});
+			this.scrollFunc(this.state.pageIndex);
+		}.bind(this));
+		//给整个对象绑定滚轮事件
+		if(window.addEventListener){
+			document.addEventListener("DOMMouseScroll",function(e){
+				e.preventDefault();
+				this.scrollFunc(e.detail);	
+			}.bind(this),false);
+			document.addEventListener("mousewheel",function(e){
+				e.preventDefault();
+				//为了兼容chrom
+				this.scrollFunc(e.wheelDelta<0?120:-120);
+			}.bind(this),false);
+		}else{
+			document.attachEvent("onmousewheel",function(e){
+				e.returnValue=false;
+				this.scrollFunc(e.wheelDelta<0?120:-120);
+			}.bind(this))	;
+		};
+		
+		//创建播放器
+		this.myPlayer = videojs('my-video-player');
+	},
+	scrollFunc:function(e){
+		if(this.state.isScroll){
+			if(e>0){
+				this.setState({scrollTop:-this.state.winHeight});
+				$(this.refs.indexVideo.refs.focusText.getDOMNode()).removeClass("transform");
+				$(this.refs.indexVideo.refs.videoText.getDOMNode()).addClass("video-txt-trans");
+				$(this.refs.indexVideo.refs.videoPlay.getDOMNode()).addClass("video-play-trans");
+				this.setState({pageIndex:3});
+			}else{
+				this.setState({scrollTop:0});
+				$(this.refs.indexVideo.refs.focusText.getDOMNode()).addClass("transform");
+				$(this.refs.indexVideo.refs.videoText.getDOMNode()).removeClass("video-txt-trans");
+				$(this.refs.indexVideo.refs.videoPlay.getDOMNode()).removeClass("video-play-trans");
+				this.setState({pageIndex:-3});
+			};
+		};
+	},
+	videoPlayer:function(){
+		this.myPlayer.play();
+		$(this.refs.videoPlayer.getDOMNode()).addClass("video-show");
+		this.setState({isScroll:false});
+	},
+	closeVideoPlayer:function(){
+		this.myPlayer.pause();
+		$(this.refs.videoPlayer.getDOMNode()).removeClass("video-show");
+		this.setState({isScroll:true});
+	},
+	render:function(){
+		
+		var scrollTop = {};
+		["-moz-","-webkit-","-o-","-ms-",""].forEach(function(item){
+			scrollTop[item+"transform"] = 'translateY('+this.state.scrollTop+'px)';
+		}.bind(this));
+		return (
+				<div id="EmallToneWebApp" style={scrollTop}>
+					<div id="header">
+						<Header/>
+					</div>
+					<div id="page">
+						<Index ref="indexVideo" openVideo={this.videoPlayer}/>
+					</div>
+					<div id="video-win" ref="videoPlayer" onClick={this.closeVideoPlayer}>
+						<span className="video-close-btn" onClick={this.closeVideoPlayer}></span>
+						 <video id="my-video-player" onClick={function(e){e.stopPropagation();}} className="video-js vjs-default-skin" controls preload="true" width="800" height="600"
+							  poster="images/video-mask.png"
+							  data-setup="{}">
+							<source src="http://emt.pinzhi365.com/emalltone.mp4" type='video/mp4' />
+						</video>
+					</div>
+					<div id="footer">
+						<Footer/>
+					</div>
+				</div>
+		);
+	}
+});
+React.render(<IndexMain/>,document.body);
+ </script>
+</body>
+</html>

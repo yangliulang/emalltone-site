@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品质365网上商城 移动客户端 全面上线</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>品质365网上商城 移动客户端 全面上线</h3>
+            <time>2013-06-16</time>
+			<p>2013年6月16日父亲节当日，罗麦科技集团旗下的大型网购平台——品质365网上商城（www.pinzhi365.com）正式上线，上万款知名品牌商品全面开售，包含食品、家居、电器、化妆品、服装鞋帽等全系列，满足您日常消费到商务馈赠的各种需求，罗麦会员在商城购物可以使用优惠券抵扣现金。</p>
+            <p>作为送给父亲节的一份大礼，商城上线伊始推出一系列优惠促销活动，截止到7月16日前的一个月里，商城所有商品在赠送积分的同时，还享受全场买2000返100、满10000送500代金券的优惠活动，一次买满10万元直接获赠价值8000元的豪华海上游轮之旅，或同等价值代金券。</p>
+            <p>品质365网上商城经过试运营成功上线，是罗麦科技集团和易麦通电子商务科技有限公司迈向电子商务领域重要的一步。电子商务为消费者提供个性化服务创新了条件，在提高整个社会的福利水平的同时，也让企业抓住了机会为增加赢利提供了契机。以品质365网上商城上线为起点，以主力商品和六条产品线为基础，海量商品为依托，以广泛的商品渠道为保障，为消费者搭建了一个更为自由、便捷、优惠的购物平台。</p>
+            <p>2013年8月1日，品质365网上商城APP移动客户端随之正式上线。庞大的手机用户群体，个性化的商务服务，让传统电子商务服务提供商看到了移动电子商务巨大的市场潜力。高端手机以及平板电脑占领市场，带动了移动电子商务的发展，可以说，移动电子商务的将是易麦通电子商务科技有限公司未来重点关注的一个新领域。</p>
+            <p>品质365网上商城移动客户端包括主力产品、VIP专区、每周精选、产品分类专区等板块，界面清晰便捷，是品质365网上商城开辟的另一大商品输出平台，
+预计未来年销量额将占品质365电商平台年销售总额七成左右，同时也是为向会员提供随时随地更便捷的购物体验应运而生。</p>
+            <p>品质365网上商城以及移动客户端的全面上线，为罗麦会员和消费者了解品质365最新促销信息、体验全方位购物体验提供了新的平台，请关注品质365官方微信（微信号：pinzhi-shenghuo）。</p>
+            <p class="fr">北京易麦通电子商务有限公司</p>
+			<p class="fr">2013年8月5日</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

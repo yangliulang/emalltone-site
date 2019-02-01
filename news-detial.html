@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.pinzhi365.com/pinzhiV2.0/images/static/favicon.ico" type="image/x-icon">
+<title>新闻-易麦通</title>
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="styles/base.css">
+<link rel="stylesheet" type="text/css" href="styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>机票预订全面上线 增值业务便捷生活</h3>
+            <time>2015-06-07</time>
+            <p>自2003年起，大批电子商务企业开始打出了增值服务牌。电商的增值服务是通过“聚合交易”平台和统一推广方式，完成了这个网络贸易集市所需要的平台、服务和推广。提供增值服务、广告宣传等方式是电子商务网站主要的盈利手段，但这些都是建立在有大量支持网站的客户群基础上的。</p>
+            <p>易麦通品质365网上商城（www.pinzhi365.com）继上线以来，网站运营平稳。 网站于2013年12月申请并获得了中国民用航空运输销售代理业务资格认可，具备了进行机票代理的资格。作为增值业务的起点，易麦通品质365以机票业务为入口，开启了增值业务的大门。</p>
+            <p>2014年4月，与艺龙信息技术有限公司签订协议，全线合作酒店预订业务；继而与江苏欧飞电子商务有限公司合作，话费充值业务也全面上线。这两项便捷生活的预订业务的开通，填补了网站增值业务的空白和服务领域的市场空白，以客户需求为中心，真正实现向客户价值的全面转移。</p>
+            <p><img src=""></p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="scripts/libs/jquery-1.9.0.js"></script>
+<script src="scripts/libs/react-width-addons.js"></script>
+<script src="scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="scripts/components/header-component.js"></script>
+<script type="text/jsx" src="scripts/components/footer-component.js"></script>
+<script src="http://s95.cnzz.com/z_stat.php?id=1260343490&web_id=1260343490" language="JavaScript"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>

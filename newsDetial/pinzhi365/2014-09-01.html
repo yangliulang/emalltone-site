@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>各大品牌第三方入驻品质365 丰富资源稳健成长</title>
+
+<script>
+	var browser = {
+          ua: navigator.userAgent.toLowerCase(),
+          msie: function() {
+              return /msie/.test(this.ua);
+          },
+          ie6: function() {
+              var self = this;
+              return self.msie() && /msie 6./.test(self.ua);
+          },
+          ie7: function() {
+              var self = this;
+              return self.msie() && /msie 7.0/.test(self.ua);
+          },
+          ie8: function() {
+              var self = this;
+              return self.msie() && /msie 8.0/.test(self.ua);
+          },
+          ie9: function() {
+              var self = this;
+              return self.msie() && /msie 9.0/.test(self.ua);
+          }
+      };
+	  
+	if(browser.ie6() || browser.ie7() || browser.ie8()) {
+			window.location.href = 'download-browser.html';
+	}; 
+</script>
+<link rel="stylesheet" type="text/css" href="../../styles/base.css">
+<link rel="stylesheet" type="text/css" href="../../styles/news-detial.css">
+</head>
+<body>
+<div id="EmallToneWebApp">
+    <div id="header">
+    </div>
+    <div id="page">
+        <div class="news-content">
+        	<h3>各大品牌第三方入驻品质365 丰富资源稳健成长</h3>
+            <time>2013-09-01</time>
+			<p>2013年6月16日品质365网上商城正式上线至今，各大品牌和第三方逐步不断地加入我们的平台，不断地丰富着网站的品类，满足着会员的购物需求和日益提高的生活水平。</p>
+            <p>今2014年下半年以来，品质365电商平台与品牌厂商合作进一步深化，2014年9月到2015年4月，经过与多方的接洽商谈，九阳、海尔、美的等大牌家电厂商纷纷成功入驻品质365，直接服务于消费者，扩充了原有产品线，成为平台主要支撑业务，为会员购买家电提供更大优惠和更多方便。 </p>
+            <p>2014年10月5日，OEM和自营商品也开始入库销售，包括莱沃纤体梅、莱沃大米等，OEM商品填补了入库空白，并得到会员肯定，取得了良好的销量成绩。</p>
+            <p>此外，众多连锁渠道商、第三方平台纷纷以洽谈合作的形式与品质365进行紧密合作。2015年5月27日，与顺丰优选合作，生鲜和冷冻商品正式上线销售，填补了重点产品分类的空白，扩充了食品生鲜类的供应渠道。 顺丰优选是由顺丰倾力打造，以全球优质安全美食为主的网购商城。网站于2012年5月31日正式上线，目前网站商品数量超过一万余种，其中70%均为进口食品，采自全球60多个国家和地区。全面覆盖生鲜食品、母婴食品、酒水饮料、营养保健、休闲食品、饼干点心、粮油副食、冲调茶饮及美食用品等品类，网站将致力于成为用户购买优质、安全美食及分享美食文化的首选平台。顺丰优选提供的商品具有品类齐全、质量新鲜、及时送达、服务到家的特点，品质365借助顺丰优选的平台，将更优质的商品和服务送到会员的手中。</p>
+            <p>近年来智能商品的迅速覆盖和普及也为家电销售市场打开了新的局面，紧跟时代，阿巴町只能儿童追踪手表，爱乐优机器人等只能产品与2015年8月起开始在品质365逐步上线，并与O2O旗舰店同步销售。</p>
+            <p>时至今日，2016年1月8日，再次与韩国大型集团希捷（CJ）集团直接合作，进口功能饮料饮品肯迪醒，为寻求未来更多的合作又打开了一扇大门。</p>
+            <p>C2B构筑了厂商、渠道和消费者之间的完美铁三角，它创造了价值增量，消费者的利益得到增长，厂商完成产品向柔性制造的过渡，渠道也最大化地释放了平台价值，为企业打开了通向未来全新商业生态的窗口。品质365在此感谢您一年以来的陪伴和支持，在下一年度中，品质365全体领导和员工真诚希望与您继续携手前行！</p>
+			<p class="fr">2016.1.10</p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<!--统一引入-->
+<script src="../../scripts/libs/jquery-1.9.0.js"></script>
+<script src="../../scripts/libs/react-width-addons.js"></script>
+<script src="../../scripts/libs/JSXTransformer.js"></script>
+<script type="text/jsx" src="../../scripts/components/header-component.js"></script>
+<script type="text/jsx" src="../../scripts/components/footer-component.js"></script>
+<!--统一引入 end-->
+<script type="text/jsx">
+React.render(<Header/>,$("#header")[0]);
+React.render(<Footer/>,$("#footer")[0]);
+ </script>
+</body>
+</html>
